@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body  class="grid place-items-center h-[100vh] bg-sky-600 font-abc">
+
+  
+    <h1 class=" font-bold mt-11 text-white font-abc">POKEDEX API BY MANELDEV</h1>
+    <form action="" class="mt-4 rounded-md" onsubmit="searchPokemon(event)">
+        <input placeholder="Escribe el nombre del pokemon" type="text" name="pokemon" autocomplete="false" class="w-60 shadow-md outline-none border-black border-2 focus:bg-white placeholder:text-[12px] placeholder:p-2 " id="data-input">
+    </form>
+    
+    
+
+    
+    
+    <div class="h-[570px] w-80 border-black border-2 mb-20 text-sm flex rounded-md flex-col items-center gap-3 p-3 mt-4 bg-white  shadow-2xl shadow-right shadow-bottom animate-rotate-y" id="data-pokecard">
+    
+    <h2 id="data-name" class="font-bold">???</h2> 
+    <img class="h-[160px] w-[160px]" src="img/poke-shadow.png" alt="" id="data-img">
+    <p id="data-id" class="font-bold">Num X</p>
+    <div class="border-gray-800 border-2 p-1 text-center w-full mb-2 font-bold bg-gray-800 text-white " id="data-type1">Tipo 1</div>
+    <div class="border-gray-800 border-2  p-1 text-center w-full  font-bold bg-gray-800 text-white" id="data-type2">Tipo 2</div>
+
+    <div class="flex justify-between w-full mt-5">
+        <p ><strong>hp</strong></p>
+        <p id="data-hp" class="font-bold"><strong>??</strong></p>
+    </div>
+
+    <div class="flex justify-between w-full">
+        <p><strong>attack</strong></p>
+        <p id="data-attack"  class="font-bold"><strong>??</strong></p>
+    </div>
+
+    <div class="flex justify-between w-full">
+        <p><strong>defense</strong></p>
+        <p id="data-defense"  class="font-bold"><strong>??</strong></p>
+    </div>
+
+    <div class="flex justify-between w-full">
+        <p><strong>special-attack</strong></p>
+        <p id="data-special-attack" class="font-bold"><strong>??</strong></p>
+    </div>
+
+    <div class="flex justify-between w-full">
+        <p><strong>special-defense</strong></p>
+        <p id="data-special-defense" class="font-bold"><strong>??</strong></p>
+    </div>
+
+    <div class="flex justify-between w-full">
+        <p><strong>speed</strong></p>
+        <p id="data-speed"  class="font-bold"><strong>??</strong></p>
+    </div>
+  </div>
+
+  
+  
+
+  <section id="data-modal" class="modal fixed top-0 bottom-0 left-0 right-0 flex items-center hidden justify-center animate-jump-in">
+    <div class="modal-container bg-white p-6 grid place-items-center  gap-6 opacity-100 w-96 border-black border-2 shadow-2xl">
+        <h1 class="font-bold ">ESE POKEMON NO EXISTE !</h1>
+        <img class="h-[190px] w-[500px]" src="img/maxresdefault.jpg" alt="" id="data-img">
+        <button id="data-button" class="bg-inherit font-bold border-black border-2 p-2 rounded-md hover:bg-black hover:text-white hover:duration-700">Cerrar</button>
+        
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+
+
